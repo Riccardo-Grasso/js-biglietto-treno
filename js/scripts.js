@@ -28,7 +28,7 @@ if (isNaN(eta)) {
     console.log(`Prezzo finale: ${prezzoMinorenne}€.`);
 } else if (eta >= 65) {
     alert(`In quanto passeggero Over-65 ha diritto ad uno sconto del 40% pari a ${scontoOver}€. Il prezzo finale del biglietto scontato è ${prezzoOver}€.`);
-    console.log(`Sconto passeggero minorenne: ${scontoOver}€.`);
+    console.log(`Sconto passeggero Over-65: ${scontoOver}€.`);
     console.log(`Prezzo finale: ${prezzoOver}€.`);
 } else {
     alert("Siamo spiacenti, non rientra in nessuna categoria a cui viene applicato lo sconto.");
