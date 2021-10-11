@@ -26,13 +26,17 @@ if (isNaN(chilometri)) {
         const prezzoOver = (prezzo - scontoOver).toFixed(2);
 
         if (eta < 18) {
-            alert(`In base alle tariffe applicate, il biglietto costerà ${prezzo}€.\nIn quanto passeggero minorenne ha diritto ad uno sconto del ${percentualeScontoMinorenne}% pari a ${scontoMinorenne}€.\nIl prezzo finale del biglietto scontato è ${prezzoMinorenne}€.`);
+
             console.log(`Sconto passeggero minorenne: ${scontoMinorenne}€.`);
             console.log(`Prezzo finale: ${prezzoMinorenne}€.`);
+            alert(`In base alle tariffe applicate, il biglietto costerà ${prezzo}€.\nIn quanto passeggero minorenne ha diritto ad uno sconto del ${percentualeScontoMinorenne}% pari a ${scontoMinorenne}€.\nIl prezzo finale del biglietto scontato è ${prezzoMinorenne}€.`);
+
         } else if (eta > 65) {
-            alert(`In base alle tariffe applicate, il biglietto costerà ${prezzo}€.\nIn quanto passeggero Over-65 ha diritto ad uno sconto del ${percentualeScontoOver}% pari a ${scontoOver}€.\nIl prezzo finale del biglietto scontato è ${prezzoOver}€.`);
+
             console.log(`Sconto passeggero Over-65: ${scontoOver}€.`);
             console.log(`Prezzo finale: ${prezzoOver}€.`);
+            alert(`In base alle tariffe applicate, il biglietto costerà ${prezzo}€.\nIn quanto passeggero Over-65 ha diritto ad uno sconto del ${percentualeScontoOver}% pari a ${scontoOver}€.\nIl prezzo finale del biglietto scontato è ${prezzoOver}€.`);
+
         } else {
             alert(`Siamo spiacenti, non rientra in nessuna categoria a cui viene applicato lo sconto. Il base alle tariffe standard, il suo biglietto costa: ${prezzo}€`);
         }
